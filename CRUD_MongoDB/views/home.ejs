@@ -6,11 +6,23 @@
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
-<body class="bg-zinc-700 text-white" >
-    <div>
-        <form action="">
-            <input type="text" class="bg-zinc-800 p-5 mt-10 ml-10 outline-none rounded-lg text-blue-500" placeholder="Enter your name here.. ">
+<body class="bg-zinc-900 p-10 text-white" >
+    <div class="">
+        <div>
+            <a href="/read" class="mt-10 ml-10 text-blue-500">Read all users</a>
+        </div>
+        <h1 class="mt-10 ml-10 text-cyan-600 text-6xl font-black">Register New User</h1>
+        <form action="/create" method="post">
+            <input type="text" class=" bg-zinc-800 p-5 mt-10 ml-10 outline-none rounded-lg text-blue-500" placeholder="Enter your name here.. " name="name">
+            <input type="text" class="bg-zinc-800 p-5 mt-10 ml-10 outline-none rounded-lg text-blue-500" placeholder="Enter your email here.. " name="email">
+            <input type="text" class="bg-zinc-800 p-5 mt-10 ml-10 outline-none rounded-lg text-blue-500" placeholder="Enter imageURL.. " name="image">
+            <input type="submit" value="Create User" class="block bg-green-700 rounded mt-10 m-10 p-2 w-30">
         </form>
+    </div>
+    <div class="">
+        <div class="">
+
+        </div>
     </div>
 </body>
 </html>

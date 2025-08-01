@@ -4,8 +4,8 @@ mongoose.connect('mongodb://127.0.0.1:27017/CRUD_practice');
 
 const userSchema = mongoose.Schema({
     name: String,
-    username: String,
-    email: String
+    email: String,
+    image: String
 })
 
 export default mongoose.model("user", userSchema); 
